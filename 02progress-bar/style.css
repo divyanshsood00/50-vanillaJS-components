@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --line-border-fill: rgb(109, 218, 0);
+  --line-border-empty: rgba(153, 153, 153, 0.561);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  margin: 30% auto;
+  width: 750px;
+}
+
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s ease-out;
+}
+
+.progress-container::before {
+  content: '';
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s ease-out;
+}
+
+.circle {
+  background-color: #fff;
+  color: var(--line-border-empty);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid var(--line-border-empty);
+  transition: 0.1s 0.4s ease-in;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+  transition: 0.1s 0.4s ease-in;
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 20px;
+  padding: 18px 50px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+  transition: 0.1s all;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: var(--line-border-empty);
+}
