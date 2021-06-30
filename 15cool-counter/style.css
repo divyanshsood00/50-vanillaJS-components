@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: grey;
+  font-family: "Source Code Pro", monospace, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.counter-container .fab {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+
+.counter-container .fab.fa-twitter {
+  color: aqua;
+}
+
+.counter-container .fab.fa-youtube {
+  color: red;
+}
+
+.counter-container .fab.fa-facebook {
+  color: rgb(53, 53, 228);
+}

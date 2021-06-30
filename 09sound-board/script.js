@@ -8,7 +8,7 @@ sounds.forEach(sound=>{
 
   btn.addEventListener('click',()=>{
     stopSongs()
-    document.getElementById(sound).play()
+    document.getElementById(sound).play() //plays audio tag
   })
   
 
@@ -19,7 +19,7 @@ sounds.forEach(sound=>{
 function stopSongs(){
   sounds.forEach(sound=>{
     const song= document.getElementById(sound)
-    song.pause()
+    song.pause() //stops play on next click
     song.currentTime = 0
   })
 }
