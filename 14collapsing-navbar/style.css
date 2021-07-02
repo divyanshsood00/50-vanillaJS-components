@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,11 +9,11 @@ body {
   background-image: linear-gradient(
     to bottom,
     rgb(218, 255, 200) 0%,
-    rgb(120, 177, 164) 50%,
+    rgb(148, 177, 120) 50%,
     #305faf 50%,
     #5290f9 100%
   );
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ body {
 }
 
 nav {
-  background-color: rgb(253, 253, 207);
+  background-color: rgb(255, 255, 247);
   padding: 2rem;
   width: 8rem;
   display: flex;
@@ -87,7 +87,7 @@ nav ul li a {
 
 .icon .line {
   background-color: #5290f9;
-  height: 0.2rem;
+  height: 0.25rem;
   width: 2rem;
   position: absolute;
   top: 1rem;
@@ -98,6 +98,8 @@ nav ul li a {
 .icon .line2 {
   top: auto;
   bottom: 1rem;
+  width: 2rem;
+  height: 0.25rem;
 }
 
 nav.active .icon .line1 {
