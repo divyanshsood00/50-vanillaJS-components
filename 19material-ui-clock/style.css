@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
 
 :root {
   --primary-color: black;
   --secondary-color: #fff;
 }
-.html.dark {
-  --primary-color: #fff;
-  --secondary-color: #333;
+html.dark {
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(39, 39, 39);
 }
 html.dark {
-  background-color: #222;
-  color: var(--primary-color);
+  background-color: #111;
+  color: var(--secondary-color);
 }
 
 html {
@@ -29,6 +29,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  overflow: hidden;
 }
 
 .toggle {
@@ -108,6 +109,7 @@ body {
 
 .time {
   font-size: 6rem;
+  color: var(--primary-color);
 }
 
 .date {
