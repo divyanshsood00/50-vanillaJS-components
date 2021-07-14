@@ -18,9 +18,9 @@ function getData() {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis'
   profile_img.innerHTML =
     '<img src="https://images.unsplash.com/photo-1625406736540-0f5b2a3f78bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="" />'
-  name.innerHTML = 'John Doe'
-  date.innerHTML = 'Oct 08, 2020'
+  name.innerHTML = 'Rat Man'
+  date.innerHTML = 'Oct 14, 2028'
 
   animated_bgs.forEach((bg) => bg.classList.remove('animated-bg'))
   animated_bg_texts.forEach((bg) => bg.classList.remove('animated-bg-text'))
-}
+}r
